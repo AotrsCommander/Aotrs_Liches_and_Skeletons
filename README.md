@@ -32,7 +32,11 @@ Two factions, The Army of The Red spear faction (the titular Aotrs) and the Skel
 
 Starting scenario with three liches (a modified classic start).
 
-You should, in theory, now be ablt to butcher lich and skeleton corpses, which will return a skull and bones, if you have Rim of Madness Bones (recommended!)
+You should, in theory, now be able to butcher lich and skeleton corpses, which will return a skull and bones, if you have Rim of Madness Bones (recommended!)
+
+You can now find/buy a special type of textbook, that in addition to its usual features, contains a spell to permenantly transform a pawn into a lich (by adding the lich xenotype). This works on HAR races with endogenes on intial testing, but be aware there may some oddities if you use it on HAR races I am no0t currently aware of.
+
+(I could in future add a similar book for animated skeletons, but in general, the no-learning mindless thing makes them pretty poor colonists, so I have, for the moment, not implemented that.)
 
 General notes:
 
@@ -50,8 +54,6 @@ No facial animation: As noted, beyond my capabilities to have the eyes animated,
 
 
 Future Possibilities:
-
-Maybe a way to create your own animated liches and skeletons from corpses (perhaps a tome-learned ability). This would require graphics (which I am terrible at) and probably a fair bit more coding beyond my current ability.
 
 Better way to handle eyeglows (and weight the chances of which head (and therefore colour) they spawn with). (In turn, potentially allowing bone colour to be dyed.)
 
