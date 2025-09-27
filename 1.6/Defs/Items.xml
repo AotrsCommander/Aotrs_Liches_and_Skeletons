@@ -5,7 +5,7 @@
     <defName>Aotrs_LichCreationTome</defName>
     <label>lich creation tome</label>
     <description>A tome that permenantly transforms the target into a spirit-bound lich. Consumes the tome upon use.</description>
-    <--descriptionHyperlinks>
+    <!--descriptionHyperlinks>
       <ThingDef>Aotrs_Lich</ThingDef>
     </descriptionHyperlinks-->
     <stackLimit>10</stackLimit>
