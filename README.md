@@ -12,6 +12,8 @@ RedMattis, Oskar, Sarg, Erdelf and Mile, whose mods (in the dependant list) I am
 
 Emo on Discord for helping with the coding for GenePrunderExtension code to deal with the errant ears and noses!
 
+Dexter-Feldoh III on Discord for firstly trying to help me blunder through realising C# coding was a step too far and then generously doing the C# coding for the lich transformation book.
+
 Contents:
 
 Two skeleton xenotypes: Spirit-Bound Lich and Animated Skeleton
