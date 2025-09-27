@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!-- lich creation tome -->
+  
+  <RulePackDef>
+    <defName>Description_LichBook</defName>
+    <include>
+      <li>ArtDescriptionUtility_Global</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        
+        <!-- General, root symbol is 'desc' -->
+
+        <li>subject->[subject_primary]</li>
+
+        <li>desc->[discussion].\n\n[anecdote]. [production].\n\n[necromanticability].\n\n[quality_statement].</li>
+        
+        <!-- discussion of the subject -->
+
+        <li>discussion->This [textbook] provides [useful_information] about necromancy and how it pertains to [subject][detail]</li>
+        <li>discussion->This [textbook] establishes the author's authority on how necromancy can be applied to [subject][detail]</li>
+        <li>discussion->Those seeking [understanding_synonym] combining necromancy and [subject] head to this [notable_adjective] [textbook][detail]</li>
+        <li>discussion->A standardized [textbook] on necromantic [subject] [detail]</li>
+        <li>discussion->An early edition of the author's [textbook] on the interaction between necromancy and [subject][detail]</li>
+
+        <li>detail->. The [precis_synonym] focuses on the more skilled aspects of the subject</li>
+        <li>detail->. It is a succinct [precis_synonym] of a complex subject</li>
+        <li>detail->. The [precis_synonym] says that, when [ANYPAWN_label] wrote this, it was the cutting edge in the field</li>
+        <li>detail->. A quote on the [note_location] says, 'True [students] of necromancy and [subject] cannot ignore [ANYPAWN_label]'s book'</li>
+          <li>students->students</li>
+          <li>students->lovers</li>
+          <li>students->practitioners</li>
+        <li>detail->. It takes you through the subject step-by-step</li>
+        <li>detail(quality[less_than]4)->, even though the author rushes through the subject</li>
+        <li>detail(quality[greater_than]3)->. It is a comprehensive treatment of the subject</li>
+        <li>detail->. The author claims in [ANYPAWN_possessive] [precis_synonym] that fraudulent copies of this book exist but that this is not one</li>
+        <li>detail(quality[less_than]4)->, though perhaps the attempt to communicate its ideas through an imagined dialogue was a mistake</li>
+        <li>detail->. The author's rhetoric in the [precis_synonym] does not distract from the core concepts</li>
+
+        <!-- details of the production process -->
+
+        <li>production->The [precis_synonym] says that this was printed by hand on [worldname]</li>
+        <li>production->The [precis_synonym] says that the University of [worldname] made this a set text</li>
+        <li>production->The [precis_synonym] says that, though these notes were made for [ANYPAWN_label]'s personal use, they have been widely shared</li>
+        <li>production->The useful parts of this [textbook] are hidden among the biographical details</li>
+        <li>production->A handwritten [note] on the [note_location] says that the [worldname] print-house shut down after the [worldname] Riots, so these later editions are rare</li>
+        <li>production->An inscribed [note] says that most copies of this [textbook] were lost during the [worldname] Incident</li>
+        <li>production->The [precis_synonym] makes clear that readers with knowledge of archotech information dissemination techniques tend to avoid this [textbook] series - but not why</li>
+        <li>production->From the [note_location], it is clear that the [subject] proselytes of [worldname] spent a fortune printing copies of this book, and then having it widely distributed</li>
+        <li>production->The [note_location] explains that the early copies of this book were handwritten by [ANYPAWN_label] [ANYPAWN_objective]self</li>
+        <li>production->The Duchess of [worldname] sponsored this [textbook], with the condition that it be freely available</li>
+        <li>production->A note says that a subscription of the booksellers of [coreworld] produced the first edition of this [textbook]</li>
+        <li>production->At the book's rear, the publisher advertises a larger series that tackles all subjects necessary for survival on the rim</li>
+        <li>production->The publishers perhaps could have been more forthright in their editorial duties, given the sloppy grammar</li>
+		
+		        <!-- details of usage -->
+
+        <li>necromanticability->Contains a [notable_adjective] [arcaneprocess] that permenantly transforms the target into a spirit-bound lich. Consumes the tome upon use</li>
+	    <li>necromanticability->Within its pages is a [notable_adjective] [arcaneprocess] that permenantly transforms the target into a spirit-bound lich. Consumes the tome upon use</li>
+		<li>necromanticability->The core of the work is a [notable_adjective] [arcaneprocess] that permenantly transforms the target into a spirit-bound lich. Consumes the tome upon use</li>
+				
+        <li>quality_statement->[exterior_quality] [page_quality]</li>
+        <!-- <li>quality_statement->[writing_quality]</li> -->
+
+        <li>anecdote->Given the large gap between [ANYPAWN_nameFull]'s birth year and the publication date of this book, it is unlikely that [ANYPAWN_pronoun] lived to see this published</li>
+        <li>anecdote->On the [note_location], someone has pasted an excoriating review of the book</li>
+        <li>anecdote->The [precis_synonym] indicates that this book passed through the public library system of [urbworld]</li>
+        <li>anecdote->According to the [note_location], [ANYPAWN_nameFull] was known for being a master of many subjects</li>
+        <li>anecdote->According to the [note_location], the people of [worldname] still talk of [ANYPAWN_nameFull] and reminisce about [ANYPAWN_possessive] love of [subject]</li>
+        <li>anecdote->According to the [note_location], a freak entanglement accident killed the author, [ANYPAWN_nameFull], shortly after publication</li>
+        <li>anecdote->According to the [precis_synonym], [ANYPAWN_nameFull] spent [ANYPAWN_possessive] days teaching in the academy on [coreworld]. This book is taken from [ANYPAWN_possessive] lectures</li>
+        <li>anecdote->According to the [precis_synonym], [ANYPAWN_nameFull]'s knowledge of [subject] was so renowned that people would stop [ANYPAWN_objective] in the street to question [ANYPAWN_objective] about it</li>
+        <li>anecdote->According to the [note_location], [ANYPAWN_nameFull] was impoverished and sold the rights to this series for very little</li>
+        <li>anecdote->According to the [note_location], [ANYPAWN_nameFull] was blind from birth, so never saw [ANYPAWN_possessive] book</li>
+        <li>anecdote->According to the [note_location], [ANYPAWN_nameFull]'s first draft of the textbook infamously featured fifty pages of digression. It was cut for the second edition</li>
+        <li>anecdote->According to the [note_location], [ANYPAWN_nameFull]'s reputation was so terrible that [ANYPAWN_pronoun] published this book under a pseudonym</li>
+        <li>anecdote->According to the [note_location], as a child, [ANYPAWN_nameFull] was so idle that [ANYPAWN_possessive] parents despaired. This textbook is a vindication of [ANYPAWN_possessive] skill</li>
+        <li>anecdote->According to the [precis_synonym], it was during [ANYPAWN_nameFull]'s fourth marriage that [ANYPAWN_pronoun] conceived of a textbook on [subject]. (This led to [ANYPAWN_possessive] fourth divorce)</li>
+
+
+        <!-- pools -->
+		
+		<li>arcaneprocess->ritual</li>
+		<li>arcaneprocess->spell</li>
+		<li>arcaneprocess->litany</li>
+		<li>arcaneprocess->rite</li>
+		<li>arcaneprocess->invocation</li>
+		<li>arcaneprocess->curse</li>
+		<li>arcaneprocess->psionic power</li>		
+		<li>arcaneprocess->formula</li>
+		<li>arcaneprocess->algorithm</li>			
+		
+        <li>textbook->primer</li>
+        <li>textbook->manual</li>
+        <li>textbook->textbook</li>
+        <li>textbook->reference book</li>
+        <li>textbook->compendium</li>
+        <li>textbook->guidebook</li>
+        <li>textbook->reference book</li>
+        <li>textbook->encyclopedia</li>
+        <li>textbook->handbook</li>
+        <li>textbook->tradebook</li>
+        <li>textbook->work</li>
+
+        <li>precis_synonym->précis</li>
+        <li>precis_synonym->frontispiece</li>
+        <li>precis_synonym->abstract</li>
+        <li>precis_synonym->synopsis</li>
+        <li>precis_synonym->outline</li>
+        <li>precis_synonym->digest</li>
+
+        <li>note_location->front cover</li>
+        <li>note_location->back cover</li>
+        <li>note_location->front flap</li>
+        <li>note_location->back flap</li>
+        <li>note_location->first page</li>
+        <li>note_location->last page</li>
+        <li>note_location->margins</li>
+        <li>note_location->title page</li>
+        <li>note_location->footnote</li>
+        <li>note_location->endnote</li>
+        <li>note_location->author's biography</li>
+        <li>note_location->shipping label</li>
+
+        <li>note->note</li>
+        <li>note->addendum</li>
+        <li>note->postscript</li>
+        <li>note->afterword</li>
+        <li>note->appendix</li>
+        <li>note->coda</li>
+        <li>note->footnote</li>
+        <li>note->endnote</li>
+
+        <li>useful_information->useful tidbits of information</li>
+        <li>useful_information->useful information</li>
+        <li>useful_information->interesting facts</li>
+        <li>useful_information->valuable insights</li>
+        <li>useful_information->practical insights</li>
+        <li>useful_information->helpful tips</li>
+        <li>useful_information->informative details</li>
+
+        <!-- General Textbook themes -->
+
+        <li>understanding_synonym->knowledge of</li>
+        <li>understanding_synonym->self-improvement in</li>
+        <li>understanding_synonym->an understanding of</li>
+        <li>understanding_synonym->scholarship in</li>
+        <li>understanding_synonym->erudition in</li>
+        <li>understanding_synonym->expertise in</li>
+        <li>understanding_synonym->a philosophy of</li>
+        <li>understanding_synonym->the ethics of</li>
+
+        <li>notable_adjective->famous</li>
+        <li>notable_adjective->obscure</li>
+        <li>notable_adjective->iconic</li>
+        <li>notable_adjective->classic</li>
+        <li>notable_adjective->timeless</li>
+        <li>notable_adjective->eldtritch</li>
+        <li>notable_adjective->vile</li>
+        <li>notable_adjective->staid</li>
+        <li>notable_adjective->simple</li>
+        <li>notable_adjective->complex</li>
+        <li>notable_adjective->functional</li>
+        <li>notable_adjective->foul</li>
+        <li>notable_adjective->ancient</li>
+        <li>notable_adjective->primitive</li>
+        <li>notable_adjective->bleak</li>
+
+        <!-- Quality -->
+
+        <li>exterior_quality(quality[greater_than]4)->The exterior of this book is finely bound and</li>
+        <li>exterior_quality(quality[greater_than]4)->A masterpiece of the printer's art, this book shines and</li>
+        <li>exterior_quality(quality[greater_than]4)->Its leather cover is rough yet</li>
+        <li>exterior_quality(quality[greater_than]4)->Though the cover is very plain,</li>
+        <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->This textbook has seen better days, but</li>
+        <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Despite being a second-hand schoolbook,</li>
+        <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->This book has had many owners, but</li>
+        <li>exterior_quality(quality[less_than]2)->The front of this book seems attractive but</li>
+        <li>exterior_quality(quality[less_than]2)->Someone has torn away the first third of the book and</li>
+        <li>exterior_quality(quality[less_than]2)->The cover is soaked in a strong-smelling liquid and</li>
+        <li>exterior_quality(quality[less_than]2)->At first sight nothing is wrong with the book, but</li>
+             
+        <li>page_quality->the pages [page_condition]</li>
+       
+        <li>page_condition(quality[greater_than]4)->[page_excellent]</li>
+        <li>page_condition(quality[less_than]5,quality[greater_than]1)->[page_decent]</li>
+        <li>page_condition(quality[less_than]2)->[page_awful]</li>
+       
+        <li>page_excellent->are in amazing condition, as if never touched</li>
+        <li>page_excellent->are in great condition</li>
+        <li>page_excellent->are pristine</li>
+        <li>page_excellent->are bright and clean</li>
+        <li>page_excellent->are uniquely well-preserved</li>
+       
+        <li>page_decent->are in a decent condition</li>
+        <li>page_decent->are legible, if crumpled</li>
+        <li>page_decent->are perfectly readable</li>
+        <li>page_decent->are decent, if slightly scored</li>
+       
+        <li>page_awful->appear to be written on crumbling parchment</li>
+        <li>page_awful->are badly damaged</li>
+        <li>page_awful->are stained with a dark substance</li>
+        <li>page_awful->are illegible</li>
+        <li>page_awful->have been annotated in an unreadable hand</li>        
+
+        <!-- world names -->
+
+		<li>worldname->[aotrsworld]</li>
+        <li>worldname->[glitterworld]</li>
+        <li>worldname->[urbworld]</li>
+        <li>worldname->[deadworld]</li>
+        <li>worldname->[shellworld]</li>
+        <li>worldname->[ruinworld]</li>
+        <li>worldname->[midworld]</li>
+        <li>worldname->[rimworld]</li>
+        <li>worldname->[coreworld]</li>
+        <li>worldname->[transcendentworld]</li>
+        <li>feralworld->[animalworld]</li>
+        <li>milworld->[warworld]</li>        
+
+        <li>aotrsworld->Fearmore</li>
+        <li>aotrsworld->Macronis IV</li>
+        <li>aotrsworld->Kalanoth</li>
+        <li>aotrsworld->Raytanye</li>
+        <li>aotrsworld->Tucharnos</li>
+        <li>aotrsworld->Akamo</li>
+        <li>aotrsworld->Temnis</li>
+        <li>aotrsworld->Vastbatros</li>
+        <li>aotrsworld->Melimfar</li>
+        <li>aotrsworld->Semilkar</li>
+        <li>aotrsworld->Torrid</li>
+		
+        <li>coreworld->Novaroma</li>
+        <li>coreworld->Lutuni</li>
+        <li>coreworld->Zeglar</li>
+        <li>coreworld->Novaroma</li>
+        <li>coreworld->Cormora Prime</li>
+        <li>coreworld->Glossolia</li>
+        <li>coreworld->Barbaros</li>
+
+        <li>deadworld->Callos IX</li>
+        <li>deadworld->Haspia</li>
+        <li>deadworld->Gost IV</li>
+        <li>deadworld->Berimund</li>
+        <li>deadworld->Ardar</li>
+        <li>deadworld->Kremhild</li>
+        <li>deadworld->Melisandz</li>
+
+        <li>glitterworld->Kalthas IV</li>
+        <li>glitterworld->Amen-Ti</li>
+        <li>glitterworld->Sophiamunda </li>
+        <li>glitterworld->Rogia</li>
+        <li>glitterworld->Utmaior</li>
+        <li>glitterworld->Caspian</li>
+        <li>glitterworld->Kenerella</li>
+
+        <li>midworld->Khalderia</li>
+        <li>midworld->Elsin</li>
+        <li>midworld->Haihan</li>
+        <li>midworld->Seolure</li>
+        <li>midworld->Panga</li>
+        <li>midworld->New London CXI </li>
+        <li>midworld->San Delenda</li>
+
+        <li>rimworld->Filson</li>
+        <li>rimworld->La Grand</li>
+        <li>rimworld->Dalles</li>
+        <li>rimworld->Twig Falls</li>
+        <li>rimworld->Old Boise</li>
+        <li>rimworld->Devil's Gate</li>
+        <li>rimworld->Laramiere</li>
+
+        <li>ruinworld->Earth</li>
+        <li>ruinworld->Ilwaba</li>
+        <li>ruinworld->Xennoa</li>
+        <li>ruinworld->Pichu</li>
+        <li>ruinworld->Perdida</li>
+        <li>ruinworld->Hisarlik</li>
+        <li>ruinworld->Helike</li>
+
+        <li>shellworld->Boccocarro</li>
+        <li>shellworld->Destria</li>
+        <li>shellworld->Trophic</li>
+        <li>shellworld->Matrio</li>
+        <li>shellworld->Samen</li>
+        <li>shellworld->Xinthia</li>
+        <li>shellworld->Ferbine</li>
+
+        <li>transcendentworld->Xaroh</li>
+        <li>transcendentworld->Immanence VI</li>
+        <li>transcendentworld->Qabba</li>
+        <li>transcendentworld->Einsof</li>
+        <li>transcendentworld->Mitvo</li>
+        <li>transcendentworld->Samydi</li>
+        <li>transcendentworld->Samsarr</li>
+
+        <li>warworld->Kemia</li>
+        <li>warworld->Vanu</li>
+        <li>warworld->Samnium</li>
+        <li>warworld->Kyrus</li>
+        <li>warworld->Punica</li>
+        <li>warworld->Cimbria XII</li>
+        <li>warworld->Barkitos</li>
+
+      
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+
+</Defs>

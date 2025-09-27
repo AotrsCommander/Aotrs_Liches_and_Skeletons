@@ -3,7 +3,8 @@
 
 
   <GeneDef>
-    <defName>Aotrs_Skeleform</defName>    <label>Skeletal Form</label>
+    <defName>Aotrs_Skeleform</defName>    
+	<label>Skeletal Form</label>
     <description>The creature is a spirit, bound into a skeleton body. It is immune to disease and aging, and does not bleed. It is capable of consuming, but does not require food. Over time, the spirit can modify the body, so a child lich is not stuck forever.</description>
     <iconPath>GeneIcons/Aotrs_SkelebodySB</iconPath>
     <displayCategory>Archite</displayCategory>
@@ -25,6 +26,7 @@
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
 	  <li MayRequire="vanillaracesexpanded.android">VREA_ScanningSickness</li>
 	  <li>ScanningSickness</li>
+	  <li>Scaria</li>
     </makeImmuneTo>
 	<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
 	<customEffectDescriptions>
@@ -45,6 +47,7 @@
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
 	  <li MayRequire="vanillaracesexpanded.android">VREA_ScanningSickness</li>
 	  <li>ScanningSickness</li>
+	  <li>ScariaInfection</li>
     </hediffGiversCannotGive>
 	<statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
@@ -141,7 +144,7 @@
 				<li>MuscleParasites</li>
 				<li>OrganDecay</li>
 				<li>FoodPoisoning</li>
-
+				<li>Scaria</li>
 				<li>Carcinoma</li>
 				<li>HeartAttack</li>
 				<li>BadBack</li>
@@ -253,7 +256,8 @@
         </li>
 		
     </modExtensions>
-	    <renderNodeProperties Inherit="False">
+	    <selectionWeight>0</selectionWeight>
+		<renderNodeProperties Inherit="False">
 		<li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
@@ -305,6 +309,7 @@
       <li>OrganDecay</li>
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
 	  <li>ScanningSickness</li>
+	  <li>Scaria</li>
     </makeImmuneTo>
 	<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
 	<customEffectDescriptions>
@@ -323,6 +328,7 @@
       <li>Asthma</li>
       <li>HeartArteryBlockage</li>
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+	  <li>ScariaInfection</li>
     </hediffGiversCannotGive>
 	<statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
@@ -411,7 +417,7 @@
 				<li>MuscleParasites</li>
 				<li>OrganDecay</li>
 				<li>FoodPoisoning</li>
-
+				<li>Scaria</li>
 				<li>Carcinoma</li>
 				<li>HeartAttack</li>
 				<li>BadBack</li>
@@ -519,6 +525,7 @@
         </li>
 		
     </modExtensions>
+	    <selectionWeight>0</selectionWeight>
 	    <renderNodeProperties Inherit="False">
 		<li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
